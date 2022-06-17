@@ -1,1 +1,261 @@
-  
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+ @font-face {
+     font-family: rajdhani;
+     src: url(../SAYNA-HTMLCSS-BATMAN1-062022/Assets/police/Rajdhani-Medium.ttf);
+ }
+ 
+ :root {
+     --yellow-color: #FFFF00;
+     --yellow-light: #F8F184;
+     --blue-color: #19587d;
+     --white-color: #fff;
+     --gradient-white: #eddebf7e;
+     --gradient-red: #89000970;
+     --gradient-blue: #19587d;
+     --gradient-gray: #808080;
+     --black-color: #000;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ /* button {
+     font-family: 'rajdhani';
+     font-size: 20px;
+     font-weight: 400;
+ } */
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ body {
+     background-color: black;
+     color: white;
+     font-family: 'space Grotesk';
+     font-weight: 300;
+ }
+ 
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 0;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ 
+ nav ul li a {
+     color: var(--white-color);
+     font-size: 25px;
+     font-weight: 500;
+     font-family: 'rajdhani';
+ }
+ 
+ ul a:hover {
+     color: var(--yellow-color);
+ }
+ /* la section hero */
+ 
+ #hero {
+     background-image: url(../SAYNA-HTMLCSS-BATMAN1-062022/Assets/Illustrations/Bathome1.png);
+     background-size: cover;
+     height: 800px;
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-color: #19587d;
+     background-size: cover;
+ }
+ 
+ .content {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     width: 60%;
+     margin: 0 auto;
+     padding-top: 150px;
+ }
+ 
+ #hero .titre {
+     margin: 20px 0;
+ }
+ 
+ .btn {
+     text-decoration: none;
+     color: var(--white-color);
+     font-size: 22px;
+     padding: 10px 20px;
+     background: linear-gradient(to right, var(--gradient-white), var(--gradient-red));
+     box-shadow: var(--black-color) 5px 5px 60px;
+ }
+ 
+ #hero .fleche {
+     display: block;
+     margin: 0 auto;
+     margin-top: 150px;
+ }
+ 
+ .logo-socio {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: fixed;
+     right: 80px;
+     top: 240px;
+ }
+ 
+ .logo-socio .socio {
+     margin-top: 15px;
+ }
+ 
+ .cta {
+     justify-content: center;
+     color: #fff;
+ }
+ 
+ .description {
+     margin-top: 40px;
+     text-align: justify;
+     width: 80%;
+     font-size: 22px
+ }
+ 
+ .batman-personnage {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+     text-align: center;
+ }
+ 
+ .nemesis {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-top: 40px;
+ }
+ 
+ .pp {
+     margin-top: 40px;
+     width: 80%;
+     text-align: justify;
+     font-size: 22px;
+ }
+ 
+ .allies {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+ }
+ 
+ .konate {
+     margin-top: 40px;
+     width: 80%;
+     font-size: 22px;
+     text-align: justify;
+ }
+ 
+ .may {
+     text-align: center;
+ }
+ 
+ .achimede {
+     margin-top: 100px;
+ }
+ 
+ .joas {
+     margin-top: 40px;
+     width: 80%;
+     text-align: justify;
+     font-size: 22px;
+ }
+ 
+ .league {
+     margin-top: 40px;
+ }
+ 
+ #multimedia .slider-multimedia {
+     display: flex;
+     width: 60%;
+     margin: 40px auto;
+ }
+ 
+ #multimedia .slider-image {
+     width: 100%;
+ }
+ 
+ #multimedia .slider-content {
+     padding: 15px;
+     background: linear-gradient(to left, var(--gradient-blue), var(--gradient-gray));
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+ }
+ 
+ .formulaire {
+     background: linear-gradient(to left, var(--gradient-blue), var(--gradient-gray));
+     margin-right: -10%;
+     margin-top: 10%;
+     padding-bottom: 600px;
+ }
+ 
+ .decisive h2 {
+     text-align: center;
+     padding-top: 32px;
+     padding-bottom: 32px;
+     font-size: 32px;
+ }
+ 
+ .decisive .titre {
+     display: block;
+ }
+ 
+ .decisive form input[ type='email'],
+ textarea {
+     display: block;
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     width: 80%;
+     border-bottom: 2px solid black;
+     background-color: transparent;
+     padding: 10px 0;
+     margin: 22px;
+ }
+ 
+ .decisive .news {
+     margin: 15px 0;
+     border-bottom: 2px solid black;
+ }
+ 
+ .decisive form .icon img {
+     transform: rotate(90deg);
+     width: 20px;
+ }
+ 
+ ::placeholder {
+     color: #f8F184;
+     font-size: 15px;
+ }
+ 
+ .btn-group {
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ form input[ type='radio'] {
+     opacity: 0;
+ }
+ 
+ .btn-group label {
+     cursor: pointer;
+     border: 2px solid;
+     border-image: linear-gradient var(--gradient-blue, --gradient-red);
+     padding: 10px;
+     font-size: 22px
+ }
